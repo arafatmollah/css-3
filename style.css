@@ -2,17 +2,17 @@
     margin: 0;
     padding: 0;
 }
-.box{
+.box1{
     height: 100px;
     width: 200px;
     background-color: rgba(255, 166, 0, 0.493);
     margin-bottom: 100px;
 }
 
-.box{
+.box1{
     transform: scale(2);
 }
-.box:hover{
+.box1:hover{
     height: 300px;
     width: 500px;
     transition: height 2s ease, width 2s ease;
@@ -55,8 +55,8 @@ button:hover{
     height: 150px;
     border: 1px solid gray;
 }
-p{
-    animation-duration: 4s;
+.animation>p{
+    animation-duration: 3s;
     animation-name: slidein;
 }
 @keyframes slidein{
@@ -64,12 +64,25 @@ p{
         margin-left: 100%;
         width: 300%;
     }
-    75%{
-        margin-left: 100%;
-        width: 100%;
+    50%{
+        margin-left: 50%;
+        width: 150%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
     }
     to{
         margin-left: 0;
         width: 100%;
+        font-size: 25px;
     }
+}
+
+.box{
+    margin: 30px;
+    padding: 15px;
+    border: 1px solid gray;
+    height: 30px;
+    max-width: 40%;
+    overflow: scroll;
+    overflow-x: hidden;
 }
